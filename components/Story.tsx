@@ -12,7 +12,7 @@ export default function Story() {
     <section className="py-24 bg-white" id="story">
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         <div className="max-w-[800px] mx-auto text-center">
-          <p className="text-xl md:text-[1.35rem] text-text-dark font-medium leading-relaxed mb-6">
+          <p className="text-lg md:text-xl text-text-medium leading-relaxed mb-6">
             Ever since I quit my job two and a half years ago, I've developed an unwavering belief in <strong>'Flow'</strong>.
           </p>
 
@@ -39,7 +39,7 @@ export default function Story() {
           </p>
 
           <div className="inline-flex items-center gap-2 bg-gradient-purple text-white py-4 px-8 rounded-2xl font-bold text-base md:text-lg my-6 text-center leading-relaxed">
-            🎧 From 13 headsets dancing on beaches in Thailand → 350 headsets to hosting events at Bali Beach clubs in less than 12 months
+            🎧 From 13 headsets dancing on beaches in Thailand → 350 headsets hosting events at Bali Beach clubs in less than 12 months
           </div>
 
           <p className="text-lg md:text-xl text-text-medium leading-relaxed mb-6">

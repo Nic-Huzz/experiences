@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from './ArrowIcon'
+import Testimonials from './Testimonials'
 
 const features = [
   'Hands-on Workshop',
@@ -11,7 +12,7 @@ export default function Build() {
   return (
     <section className="py-24 bg-gradient-dark text-white relative overflow-hidden build-gradient" id="build">
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
-        <div className="relative z-10 text-center max-w-[800px] mx-auto">
+        <div className="relative z-10 text-center max-w-[1000px] mx-auto">
           <p className="text-sm font-semibold uppercase tracking-wide text-gold mb-2">
             Offering 7
           </p>
@@ -46,6 +47,8 @@ export default function Build() {
             Join Next Hackathon
             <ArrowRightIcon />
           </a>
+
+          <Testimonials />
         </div>
       </div>
     </section>

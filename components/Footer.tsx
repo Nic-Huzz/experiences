@@ -25,15 +25,9 @@ function WhatsAppIcon() {
   )
 }
 
-const footerLinks = [
-  { label: 'About', href: '#' },
-  { label: 'Contact', href: '#' },
-  { label: 'Resources', href: '#' },
-]
-
 const socialLinks = [
-  { icon: InstagramIcon, label: 'Instagram', href: '#' },
-  { icon: WhatsAppIcon, label: 'WhatsApp', href: '#' },
+  { icon: InstagramIcon, label: 'Instagram', href: 'https://instagram.com/_huzz' },
+  { icon: WhatsAppIcon, label: 'WhatsApp', href: 'https://wa.me/61423220241' },
 ]
 
 export default function Footer() {
@@ -44,18 +38,6 @@ export default function Footer() {
           <span className="text-2xl font-extrabold text-gradient-purple">
             Nichuzz
           </span>
-
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-            {footerLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-white/80 font-medium hover:text-gold hover:opacity-100 transition-all duration-300"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
 
           <div className="flex gap-4">
             {socialLinks.map((social) => (
