@@ -55,7 +55,7 @@ export default function FlowFinder() {
             </a>
           </div>
 
-          <div className="rounded-3xl overflow-hidden shadow-heavy">
+          <div className="rounded-3xl overflow-hidden shadow-heavy transition-all duration-300 hover:shadow-gold hover:scale-[1.02]">
             <Image
               src="/20241202-DSC09783.jpg"
               alt="Flow Finder Workshop in action"

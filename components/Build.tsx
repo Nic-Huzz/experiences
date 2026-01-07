@@ -31,7 +31,7 @@ export default function Build() {
             {features.map((feature, index) => (
               <span
                 key={index}
-                className="bg-white/10 py-3 px-6 rounded-xl font-semibold text-sm"
+                className="bg-white/10 py-3 px-6 rounded-xl font-semibold text-sm transition-all duration-300 hover:bg-white/20 hover:-translate-y-0.5 cursor-default"
               >
                 {feature}
               </span>
