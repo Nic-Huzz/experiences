@@ -36,7 +36,7 @@ export default function FlowCompass() {
 
             <ul className="flex flex-wrap justify-center gap-4 mb-8">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-2 py-2 px-4 bg-bg-light rounded-full text-sm text-text-dark transition-all duration-300 hover:bg-purple/10 hover:-translate-y-0.5 cursor-default">
+                <li key={index} className="flex items-center gap-2 py-2 px-4 bg-bg-light rounded-full text-sm text-text-dark transition-[transform,background-color] duration-300 hover:bg-purple/10 hover:-translate-y-0.5 cursor-default">
                   <span className="w-5 h-5 feature-check-gradient text-white rounded-full flex items-center justify-center text-[0.7rem] font-bold">
                     ✓
                   </span>
@@ -49,7 +49,7 @@ export default function FlowCompass() {
               href="https://findmyflow.nichuzz.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-gradient-purple text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-purple hover:shadow-purple-hover hover:-translate-y-1 transition-all duration-300 mb-12"
+              className="inline-flex items-center gap-3 bg-gradient-purple text-white px-10 py-5 rounded-2xl text-lg font-bold shadow-purple hover:shadow-purple-hover hover:-translate-y-1 transition-[transform,box-shadow] duration-300 mb-12"
             >
               Start Your Quest
               <ArrowRightIcon />
@@ -65,13 +65,14 @@ export default function FlowCompass() {
               {screenshots.map((screenshot, index) => (
                 <div
                   key={index}
-                  className="rounded-2xl overflow-hidden shadow-heavy transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02]"
+                  className="rounded-2xl overflow-hidden shadow-heavy transition-transform duration-300 hover:-translate-y-2 hover:scale-[1.02]"
                 >
                   <Image
                     src={screenshot.src}
                     alt={screenshot.alt}
                     width={250}
                     height={500}
+                    sizes="(max-width: 768px) 45vw, 200px"
                     className="w-full h-auto"
                   />
                 </div>

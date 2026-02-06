@@ -65,7 +65,7 @@ export default function Story() {
               <a
                 key={offering.number}
                 href={offering.href}
-                className="flex items-center gap-2 py-3 px-5 rounded-full bg-white border-2 border-border text-text-medium font-semibold text-sm hover:-translate-y-0.5 hover:shadow-medium hover:border-purple transition-all duration-300"
+                className="flex items-center gap-2 py-3 px-5 rounded-full bg-white border-2 border-border text-text-medium font-semibold text-sm hover:-translate-y-0.5 hover:shadow-medium hover:border-purple transition-[transform,box-shadow,border-color] duration-300"
               >
                 <span className="w-6 h-6 rounded-full pill-number-gradient text-white flex items-center justify-center font-bold text-xs">
                   {offering.number}

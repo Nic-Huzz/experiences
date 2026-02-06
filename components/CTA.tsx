@@ -14,7 +14,7 @@ export default function CTA() {
             </p>
             <a
               href="#"
-              className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
               Book a Discovery Call
               <PhoneIcon />

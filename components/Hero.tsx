@@ -37,7 +37,7 @@ export default function Hero() {
 
         <a
           href="#story"
-          className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-all duration-300 w-fit"
+          className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-[transform,box-shadow] duration-300 w-fit"
         >
           Discover My Journey
           <ArrowUpRightIcon />
@@ -50,6 +50,7 @@ export default function Hero() {
           src="/huzz-photo_copy.jpg"
           alt="Huzz - Transformational Experience Guide"
           fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover object-top"
           priority
         />

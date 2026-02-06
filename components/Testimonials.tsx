@@ -27,7 +27,7 @@ const products: ProductShowcase[] = [
     builderTitle: 'Small Business Owner',
     builderInitials: 'T',
     testimonial: "My mind is exploding with opportunities and possibilities now. What this has made possible is crazy.",
-    image: '/Gardeningportal.png',
+    image: '/Gardeningportal.jpg',
   },
 ]
 
@@ -43,13 +43,14 @@ export default function Testimonials() {
 
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {products.map((product, i) => (
-          <div key={i} className="bg-white rounded-2xl p-6 overflow-hidden shadow-medium transition-all duration-300 hover:-translate-y-1.5 hover:shadow-heavy">
+          <div key={i} className="bg-white rounded-2xl p-6 overflow-hidden shadow-medium transition-[transform,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-heavy">
             {/* Screenshot */}
             <div className="aspect-video bg-gray-100 -mx-6 -mt-6 mb-4 overflow-hidden border-b border-gray-100 relative">
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
+                sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover object-top"
               />
             </div>

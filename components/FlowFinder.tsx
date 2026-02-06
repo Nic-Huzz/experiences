@@ -48,19 +48,20 @@ export default function FlowFinder() {
 
             <a
               href="#"
-              className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-gradient-gold text-text-dark px-10 py-5 rounded-2xl text-lg font-bold shadow-gold hover:shadow-gold-hover hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
               Join the Workshop
               <ArrowRightIcon />
             </a>
           </div>
 
-          <div className="rounded-3xl overflow-hidden shadow-heavy transition-all duration-300 hover:shadow-gold hover:scale-[1.02]">
+          <div className="rounded-3xl overflow-hidden shadow-heavy hover:shadow-gold hover:scale-[1.02] transition-[transform,box-shadow] duration-300">
             <Image
               src="/20241202-DSC09783.jpg"
               alt="Flow Finder Workshop in action"
               width={600}
               height={450}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-full object-cover"
             />
           </div>
